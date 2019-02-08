@@ -12,7 +12,7 @@ import javax.persistence.Persistence;
 @WebService(endpointInterface = "ws.DemoWebServiceInterface")
 public class WSService implements DemoWebServiceInterface {
 
-
+//Entity manager
     EntityManagerFactory emf = Persistence.createEntityManagerFactory ("DemoWebService");
     EntityManager em = emf.createEntityManager ();
     EntityTransaction tx = em.getTransaction ();
